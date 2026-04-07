@@ -1,0 +1,76 @@
+.tool-page {
+  min-height: calc(100vh - var(--nav-h));
+  background: var(--surface);
+}
+.tool-page-hero {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 40px 0 36px;
+}
+.back-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.82rem; font-weight: 600; color: var(--text-3);
+  margin-bottom: 20px; transition: color 0.15s;
+}
+.back-link:hover { color: var(--brand); }
+.tool-page-title {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 10px;
+}
+.tool-page-icon {
+  width: 44px; height: 44px;
+  background: var(--brand-light); border-radius: var(--radius);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.tool-page-icon svg { color: var(--brand); }
+.tool-page-title h1 {
+  font-size: 1.6rem; font-weight: 800; letter-spacing: -0.5px; color: var(--text);
+}
+.tool-page-desc {
+  font-size: 0.9rem; color: var(--text-2); max-width: 600px; line-height: 1.6;
+  margin-left: 58px;
+}
+
+.tool-body { padding: 40px 0 80px; }
+.tool-workspace {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.toolbar {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.workspace-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-top: 16px; padding-top: 16px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap; gap: 10px;
+}
+.workspace-stats {
+  font-size: 0.8rem; color: var(--text-3); font-weight: 500;
+}
+.footer-actions { display: flex; gap: 8px; }
+
+.panel-label {
+  display: block; font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.4px; text-transform: uppercase;
+  color: var(--text-3); margin-bottom: 8px;
+}
+
+.error-bar {
+  display: flex; align-items: center; gap: 8px;
+  background: #fef2f2; border: 1px solid #fecaca;
+  color: var(--danger); padding: 10px 14px; border-radius: var(--radius-sm);
+  font-size: 0.85rem; margin-top: 12px;
+}
+
+@media (max-width: 640px) {
+  .tool-page-hero { padding: 28px 0 24px; }
+  .tool-workspace { padding: 20px; }
+  .tool-page-desc { margin-left: 0; margin-top: 8px; }
+}
