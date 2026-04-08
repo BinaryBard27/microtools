@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://microtools.dev/</loc></url>
+  <url><loc>https://microtools.dev/qr-generator</loc></url>
+  <url><loc>https://microtools.dev/json-formatter</loc></url>
+  <url><loc>https://microtools.dev/jwt-decoder</loc></url>
+  <url><loc>https://microtools.dev/image-compressor</loc></url>
+  <url><loc>https://microtools.dev/word-counter</loc></url>
+  <url><loc>https://microtools.dev/base64</loc></url>
+  <url><loc>https://microtools.dev/password-generator</loc></url>
+  <url><loc>https://microtools.dev/color-converter</loc></url>
+  <url><loc>https://microtools.dev/case-converter</loc></url>
+</urlset>

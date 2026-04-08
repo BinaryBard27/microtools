@@ -1,4 +1,6 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+//, { useState, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Image as ImageIcon, UploadCloud, Download, ArrowRight } from 'lucide-react';
 import imageCompression from 'browser-image-compression';
@@ -60,6 +62,10 @@ const ImageCompressor = () => {
 
   return (
     <div className="tool-page">
+      <Helmet>
+        <title>Image Compressor - MicroTools</title>
+        <meta name="description" content="Compress and resize images locally in your browser without quality loss." />
+      </Helmet>
       <div className="tool-page-hero">
         <div className="container">
           <Link to="/" className="back-link"><ArrowLeft size={14} /> All Tools</Link>

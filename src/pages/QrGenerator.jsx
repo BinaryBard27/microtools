@@ -1,4 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+//, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, QrCode, Download } from 'lucide-react';
 import { QRCodeCanvas } from 'qrcode.react';
@@ -26,6 +28,10 @@ const QrGenerator = () => {
 
   return (
     <div className="tool-page">
+      <Helmet>
+        <title>QR Code Generator - MicroTools</title>
+        <meta name="description" content="Generate custom, downloadable QR codes for any URL or text instantly." />
+      </Helmet>
       <div className="tool-page-hero">
         <div className="container">
           <Link to="/" className="back-link"><ArrowLeft size={14} /> All Tools</Link>

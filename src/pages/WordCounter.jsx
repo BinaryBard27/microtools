@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+//, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Type, Trash2 } from 'lucide-react';
 import './ToolPageLayout.css';
@@ -31,6 +33,10 @@ const WordCounter = () => {
 
   return (
     <div className="tool-page">
+      <Helmet>
+        <title>Word & Character Counter - MicroTools</title>
+        <meta name="description" content="Count words, characters, sentences and calculate reading time instantly." />
+      </Helmet>
       <div className="tool-page-hero">
         <div className="container">
           <Link to="/" className="back-link"><ArrowLeft size={14} /> All Tools</Link>

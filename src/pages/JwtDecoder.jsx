@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+//, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, ShieldCheck, AlertCircle } from 'lucide-react';
 import './ToolPageLayout.css';
@@ -29,6 +31,10 @@ const JwtDecoder = () => {
 
   return (
     <div className="tool-page">
+      <Helmet>
+        <title>JWT Decoder - MicroTools</title>
+        <meta name="description" content="Decode JSON Web Tokens securely in your browser without sending data to a server." />
+      </Helmet>
       <div className="tool-page-hero">
         <div className="container">
           <Link to="/" className="back-link"><ArrowLeft size={14} /> All Tools</Link>

@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+//, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Hash, Lock, Unlock, Copy, Trash2, AlertCircle } from 'lucide-react';
 import './ToolPageLayout.css';
@@ -21,6 +23,10 @@ const Base64 = () => {
 
   return (
     <div className="tool-page">
+      <Helmet>
+        <title>Base64 Encoder / Decoder - MicroTools</title>
+        <meta name="description" content="Encode and decode Base64 strings quickly and securely in your browser." />
+      </Helmet>
       <div className="tool-page-hero">
         <div className="container">
           <Link to="/" className="back-link"><ArrowLeft size={14} /> All Tools</Link>

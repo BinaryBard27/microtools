@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+//, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Palette, Copy, CheckCircle2 } from 'lucide-react';
 import './ToolPageLayout.css';
@@ -29,6 +31,10 @@ const CopyBtn = ({ text }) => {
   const copy = () => { navigator.clipboard.writeText(text); setCopied(true); setTimeout(() => setCopied(false), 1600); };
   return (
     <button className="btn btn-ghost" onClick={copy} style={{ padding: '8px 12px', flexShrink: 0 }}>
+      <Helmet>
+        <title>Color Converter - MicroTools</title>
+        <meta name="description" content="Convert colors between HEX, RGB, HSL and see previews instantly." />
+      </Helmet>
       {copied ? <CheckCircle2 size={15} color="var(--success)" /> : <Copy size={15} />}
     </button>
   );

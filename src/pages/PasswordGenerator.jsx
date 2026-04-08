@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+//, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Key, Copy, RefreshCw, CheckCircle2 } from 'lucide-react';
 import './ToolPageLayout.css';
@@ -14,6 +16,10 @@ const StrengthBar = ({ password }) => {
   const colors = ['', '#ef4444', '#f59e0b', '#3b82f6', '#10b981', '#059669'];
   return (
     <div style={{ marginTop: 12 }}>
+      <Helmet>
+        <title>Secure Password Generator - MicroTools</title>
+        <meta name="description" content="Generate strong, randomly secure passwords using client-side cryptography." />
+      </Helmet>
       <div style={{ display: 'flex', gap: 4, marginBottom: 6 }}>
         {[1,2,3,4,5].map(i => (
           <div key={i} style={{

@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+//, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, FileJson, Copy, Minimize2, Maximize2, Trash2, AlertCircle } from 'lucide-react';
 import './ToolPageLayout.css';
@@ -29,6 +31,10 @@ const JsonFormatter = () => {
 
   return (
     <div className="tool-page">
+      <Helmet>
+        <title>JSON Formatter & Validator - MicroTools</title>
+        <meta name="description" content="Format, beautify, and validate JSON data instantly in your browser." />
+      </Helmet>
       <div className="tool-page-hero">
         <div className="container">
           <Link to="/" className="back-link"><ArrowLeft size={14} /> All Tools</Link>

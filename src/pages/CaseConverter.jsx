@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+//, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, CaseSensitive, Copy, Trash2 } from 'lucide-react';
 import './ToolPageLayout.css';
@@ -37,6 +39,10 @@ const CaseConverter = () => {
 
   return (
     <div className="tool-page">
+      <Helmet>
+        <title>Text Case Converter - MicroTools</title>
+        <meta name="description" content="Convert text between camelCase, snake_case, PascalCase and more instantly." />
+      </Helmet>
       <div className="tool-page-hero">
         <div className="container">
           <Link to="/" className="back-link"><ArrowLeft size={14} /> All Tools</Link>
