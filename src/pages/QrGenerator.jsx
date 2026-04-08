@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
-//, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, QrCode, Download } from 'lucide-react';
 import { QRCodeCanvas } from 'qrcode.react';

@@ -1,15 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, GitBranch } from 'lucide-react';
+import { GitBranch } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => (
   <nav className="navbar">
     <div className="container nav-inner">
       <Link to="/" className="brand">
-        <div className="brand-icon-wrap">
-          <Zap size={18} />
-        </div>
         <span className="brand-name">Micro<span>Tools</span></span>
       </Link>
       <div className="nav-right">

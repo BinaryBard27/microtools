@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-//, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, CaseSensitive, Copy, Trash2 } from 'lucide-react';
 import './ToolPageLayout.css';
